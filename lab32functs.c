@@ -51,4 +51,3 @@ int collatz(int N, int accum) {
         return collatz(3 * N + 1, accum + 1);
     }
 }
-

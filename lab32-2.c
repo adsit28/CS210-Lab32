@@ -20,6 +20,14 @@ int main() {
     // Write your own code to test the base and recursive cases of calculateDecayDuration() to determine
     // that it is working correctly
 
-
+int initialRadioactivity = 4; // Initial radioactivity in rads
+    double halfLife = 30.0; // Half-life in years
+    
+    // Call the recursive function with initial radioactivity, half-life, and 0 for the accumulator
+    double duration = calculateDecayDuration(initialRadioactivity, halfLife, 0.0);
+    
+    // Print the result
+    printf("It will take %.2f years for the radioactivity to drop below 1 rad.\n", duration);
+    
     return 0;
 }

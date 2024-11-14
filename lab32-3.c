@@ -23,4 +23,18 @@ int main() {
     // that it is working correctly
 
     return 0;
+
+    int startValue;
+    
+    // Ask the user for the starting number
+    printf("Enter a number to start the Collatz sequence: ");
+    scanf("%d", &startValue);
+    
+    // Call the Collatz function with the starting number and an initial step count of 0
+    int steps = collatz(startValue, 0);
+    
+    // Print the result: the number of steps to reach 1
+    printf("It took %d steps to reach 1 from %d.\n", steps, startValue);
+    
+    return 0;
 }
